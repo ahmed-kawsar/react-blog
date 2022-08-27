@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f0d0f0;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+  border: 2px solid #1cd;
+  position: relative;
+}
+
+#header {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+  padding: 1em;
+}
+
+#footer {
+  background-color: #1cd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.4em;
+}
+
+#footer p {
+  font-size: 0.9em;
+}
+
+#nav {
+  background-color: #1cd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+#searchForm input {
+  padding: 0.8em 0.5em;
+  border: none;
+}
+
+#searchForm input:focus {
+  border: none;
+}
+
+#navMenu {
+  display: flex;
+}
+
+#navMenu li {
+  list-style-type: none;
+}
+
+#navMenu li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+}
+
+#navMenu li a:hover,
+#navMenu li a:focus,
+#navMenu li a:active {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+  transition: 0.5s ease;
+}
+
+.home,
+.postPage,
+.newPost,
+.about {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+  padding-bottom: 2em;
+}
+
+.post {
+  padding: 1em 0;
+}
+
+.post h2 {
+  margin-bottom: 0.2em;
+  color: #3c3c3c;
+}
+
+.post p {
+  margin-bottom: 0.6em;
+  color: #3c3c3c;
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff1122;
+  color: #f5f5f5;
+}
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.postTitle {
+  height: 2em;
+  margin-top: 2em;
+}
+
+.postBody {
+  height: 10em;
+  text-align: left;
+}
+
+.submit-btn {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+}
